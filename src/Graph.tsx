@@ -50,11 +50,7 @@ class Graph extends Component<IProps, {}> {
         upper_bound:'avg',
         lower_bound:'avg',
         trigger_alert:'avg',
-       
       }));
-     
-
-
     }
   }
 

@@ -1,0 +1,25 @@
+From c29c319b45a46f20990cb494641e6510168b3e00 Mon Sep 17 00:00:00 2001
+From: Hyunsu Joo <hs9880@gmail.com>
+Date: Mon, 19 Oct 2020 15:59:41 +0900
+Subject: [PATCH 2/2] Fix typo on columns label
+
+---
+ src/Graph.tsx | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/src/Graph.tsx b/src/Graph.tsx
+index 9474a21..f0f4da3 100644
+--- a/src/Graph.tsx
++++ b/src/Graph.tsx
+@@ -41,7 +41,7 @@ class Graph extends Component<IProps, {}> {
+       elem.load(this.table);
+       elem.setAttribute('view', 'y_line');
+       elem.setAttribute('row-pivots', '["timestamp"]');
+-      elem.setAttribute('columns', '["ratio","lower_bound,"upper_bound","trigger_alert"]');
++      elem.setAttribute('columns', '["ratio","lower_bound","upper_bound","trigger_alert"]');
+       elem.setAttribute('aggregates', JSON.stringify({
+         price_abc :'avg',
+         price_def:'avg',
+-- 
+2.24.3 (Apple Git-128)
+
